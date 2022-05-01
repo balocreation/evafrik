@@ -1,0 +1,91 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Evafrik
+    Template URI: https://boastack.com/
+    Description: Luxury meets sofa
+    Author: Boastack
+    Author URI: https://boastack.com/
+    Version: 1.0
+-----------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+  #reviews .reviews-img {
+    display: none;
+    margin: inherit;
+  }
+  #reviews .reviews-svg {
+    margin: inherit;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .xl-padding{
+    padding: 40px 0;
+  }
+  .header .navbar-bg {
+    padding-bottom: 2.5rem;
+    background: #F1D28A;
+  }
+  .header .navbar-nav .nav-item .nav-link {
+    margin: 1rem 0 0;
+  }
+  .header .navbar-nav .nav-item:nth-child(1) > a {
+    margin-top: 2rem;
+  }
+  .header .navbar-nav .nav-item .nav-link.active {
+    color: #fff;
+    background: #111151;
+  }
+  .header .navbar-nav .nav-item .nav-link:hover,
+  .header .navbar-nav .nav-item .nav-link:focus{
+    color: #111151;
+    background: #FFFFFF;
+  }
+  .header .navbar .btn-gradient {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  #features .features-img {
+    width: 80%;
+    display: block;
+    margin: 0 auto 3rem;
+  }
+  .carousel-wrapper::after {
+    left: 90%;
+  }
+  #reviews .reviews-img {
+    display: block;
+    width: 80%;
+    margin: 3rem auto 0;
+  }
+  #reviews .reviews-svg {
+    display: none;
+    margin: inherit;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .xl-padding{
+    padding: 30px 0;
+  }
+  .header .navbar-bg {
+    padding-bottom: 2.5rem;
+    background: #F1D28A;
+  }
+  .header .navbar .btn-gradient {
+    display: block;
+    margin: 0 1rem;
+  }
+  .hero-scroll {
+    height: 65vh;
+    transition: all 0.3s ease-in;
+  }
+  #footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+  #footer .social-title,
+  #footer .social-text {
+    display: none;
+  }
+}

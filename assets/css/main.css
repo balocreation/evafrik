@@ -1,0 +1,298 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Evafrik
+    Template URI: https://boastack.com/
+    Description: Luxury meets sofa
+    Author: Boastack
+    Author URI: https://boastack.com/
+    Version: 1.0
+-----------------------------------------------------------------------------------*/
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+@import url('../fonts/fontawesome/css/all.min.css');
+
+/*----------------------------------------*/
+/*  1. Theme Default
+/*----------------------------------------*/
+body {
+	color: #222222;
+	font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Circular Std', sans-serif;
+	background: #FBF9F9;
+    position: relative;
+}
+a {
+	transition: all 0.3s ease-in;
+	text-decoration: none;
+}
+a:hover, a:focus {
+    color: #F1D28A;
+}
+p {
+    color: #222222;
+	margin: 0 0 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #111151;
+    font-weight: 600;
+    font-family: 'Circular Std', sans-serif;
+	margin: 0 0 15px;
+}
+.container {
+    max-width: 1200px;
+}
+.text-primary {
+    color: #111151 !important;
+}
+.bg-primary {
+    background: #111151 !important;
+}
+.xl-padding {
+    padding: 80px 0;
+}
+.transparent {
+    background: transparent;
+}
+.btn-primary {
+    color: #FFFFFF;
+    padding: 14px 28px;
+    background: #111151;
+    border-radius: 5px;
+    border-width: 0;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #111151;
+    background: #F1D28A;
+}
+.btn, .btn-primary:focus, .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+@keyframes glitch {
+    2%, 64% {
+        transform: translate(2px,0) skew(0deg);
+    }
+    4%, 60% {
+        transform: translate(-2px,0) skew(0deg);
+    }
+    62% {
+        transform: translate(0,0) skew(5deg);
+    }
+}
+/*----------------------------------------*/
+/*  2. Header Menu
+/*----------------------------------------*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.header .navbar-brand {
+    margin-right: 2rem;
+}
+.header .navbar-brand svg {
+    max-width: 180px;
+}
+.header .navbar-nav .nav-item .nav-link {
+    color: #222222;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 1rem 1rem;
+    padding: 0.65rem 1.25rem;
+    border-radius: 5px;
+}
+.header .navbar-nav .nav-item .nav-link.active {
+	color: #fff;
+    background: #111151;
+}
+.header .navbar-nav .nav-item .nav-link:hover,
+.header .navbar-nav .nav-item .nav-link:focus{
+	color: #111151;
+    background: #FFFFFF;
+}
+.header .navbar-dark .navbar-toggler {
+    background: transparent;
+    border: none;
+    outline: 0;
+}
+/*----------------------------------------*/
+/*  3. Hero Area
+/*----------------------------------------*/
+.hero-area {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/hero.png') no-repeat center center / cover;
+}
+.hero-scroll {
+    height: 80vh;
+    transition: all 0.3s ease-in;
+}
+.hero-area .heading { 
+    font-weight: 600; 
+    color: #111151;
+    animation: glitch 3s linear infinite;
+}
+.hero-area .hero-form {
+    max-width: 450px;
+    margin: auto;
+}
+.hero-area .hero-search {
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.hero-area .hero-search .form-control {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+.hero-area .hero-search .btn-primary {
+    color: #FFFFFF;
+    background: #111151;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.hero-area .hero-search .btn-primary:hover {
+    color: #111151;
+    background: #FFFFFF;
+}
+/*--------------------------------*/
+/* 4. Catalogue
+/*--------------------------------*/
+
+/*----------------------------------------*/
+/*  5. Features
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*  6. Reviews
+/*----------------------------------------*/
+.carousel-wrapper::before {
+    content: " ";
+    background: url(../images/left.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
+}
+.carousel-wrapper::after {
+    content: " ";
+    background: url(../images/right.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 100%;
+    z-index: 1;
+}
+.circle-y {
+    border: 3px solid #F1D28A; 
+    border-radius: 100%; 
+    box-sizing: border-box; 
+    position: relative; 
+    width: 450px; 
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-b {
+    width: 280px;
+    height: 280px;
+    border: 3px solid #111151;
+    border-radius: 100%; 
+    box-sizing: border-box; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.review1 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 30%;
+    left: -150px;
+}
+.review2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 110%;
+    left: 0;
+}
+.review3 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 100%;
+    right: -50px;
+}
+.review4 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 45%;
+    right: -110px;
+}
+.review5 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 100%;
+    right: -50px;
+}
+.review6 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 110%;
+    left: 0;
+}
+.review7 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.review1:hover, .review2:hover, .review3:hover, .review4:hover, .review5:hover, .review6:hover, .review7:hover {
+    transform: scale(1.25);
+    transition: all 0.3s ease-in-out;
+}
+/*----------------------------------------*/
+/*  7. Footer
+/*----------------------------------------*/
+#footer {
+    background: #111151;
+}
+#footer .nav {
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+#footer .nav-title {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+#footer .nav-link {
+    color: #FFFFFF;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease-in;
+}
+#footer .nav-link:hover {
+    color: #F1D28A;
+    padding-left: 5px;
+}
+#footer .copyright {
+    margin-top: 3rem;
+}
+#footer .hr-copyright {
+    margin-bottom: 3rem;
+    background: linear-gradient(265.31deg, rgba(180, 241, 255, 0.7) 3.07%, rgba(237, 163, 255, 0.7) 59.34%, rgba(253, 202, 228, 0.7) 96.21%);
+}
+#footer .copyright a {
+    color: #FFFFFF;
+}
