@@ -6,7 +6,7 @@
     Author URI: https://boastack.com/
     Version: 1.0
 -----------------------------------------------------------------------------------*/
-@import url('http://fonts.cdnfonts.com/css/circular-std');
+@import url('../fonts/circular-std/stylesheet.css');
 @import url('../fonts/fontawesome/css/all.min.css');
 
 /*----------------------------------------*/
