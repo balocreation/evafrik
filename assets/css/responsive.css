@@ -50,7 +50,7 @@
     margin: 0 auto 3rem;
   }
   .carousel-wrapper::after {
-    left: 90%;
+    left: 85%;
   }
   #reviews .reviews-img {
     display: block;
